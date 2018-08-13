@@ -1,0 +1,15 @@
+logging:
+  level:
+    com.hand.api.controller.v1.StudentController: WARN
+    com.hand.infra.mapper: DEBUG
+    com.hand.api.service: INFO
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sakila?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&autoReconnect=true&rewriteBatchedStatements=TRUE&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123456
+    username: root
+
+## mybatis
+mybatis:
+  mapper-locations: mapper/*.xml
